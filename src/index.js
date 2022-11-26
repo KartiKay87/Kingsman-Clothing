@@ -1,11 +1,11 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.scss";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import { clear } from "localforage";
+import App from "./App";
+import { UserProvider } from "./contexts/user.context";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.scss";
+import reportWebVitals from "./reportWebVitals";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -13,7 +13,9 @@ const root = createRoot(container);
 root.render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <UserProvider>
+        <App />
+      </UserProvider>
     </BrowserRouter>
   </StrictMode>
 );

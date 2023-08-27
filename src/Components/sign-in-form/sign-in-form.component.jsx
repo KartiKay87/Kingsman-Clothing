@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./sign-in-form.styles.scss";
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
+import React from "react";
 
 import {
   signInAuthUserWithEmailAndPassword,

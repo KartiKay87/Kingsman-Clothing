@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
@@ -9,7 +10,7 @@ import {
   signOut,
   onAuthStateChanged,
 } from "firebase/auth";
-
+import React from "react";
 import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
 
 const firebaseConfig = {

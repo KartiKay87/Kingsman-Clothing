@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import React from "react";
 
 import Directory from "../../Components/directory/directory.component.jsx";
 
